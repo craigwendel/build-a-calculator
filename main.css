@@ -17,6 +17,8 @@ light green: #8FBF7F*/
 }
 .clear-output {
   display: flex;
+  align-content: flex-end;
+  align-items: center;
   height: 17vh;
 }
 .clear-button {
@@ -27,7 +29,8 @@ light green: #8FBF7F*/
 }
 .screen {
   flex-basis: 75%;
-  border: 1px outset #ffffff;
+  text-align: right;
+  color: #ffffff;
 }
 .main-calc-row {
   display: flex;

@@ -1,18 +1,29 @@
+//variables:
 let clearButton = document.getElementById('clear-button');
-
-function clearClick() {
-  console.log('Click!')
-}
-
-clearButton.addEventListener('click',clearClick)
-
-
-
+let screenDisplay = document.getElementById('screen');
 let getButtons = document.querySelectorAll('.buttons h3');
+let product = document.querySelectorById('multiply')
+let quotient = document.querySelectorById('divide');
+let addition = document.querySelectorById('add');
+let subtraction = document.querySelectorById('subtract');
+let evaluation = document.querySelectorById('equal');
+
+clearButton.addEventListener('click', function(){
+  screenDisplay.textContent = " ";
+  calculate = [];
+});
+
+
+var calculate = [];
 
 for (let i = 0; i < getButtons.length; i++) {
-   const buttonValue = getButtons[i].textContent;
-   console.log(buttonValue)
-}
+   let buttonValue = getButtons[i].textContent;
 
-console.log("outside the loop", buttonValue)
+   getButtons[i].addEventListener('click', function() {
+     console.log(buttonValue);
+     calculate.push(buttonValue);
+     console.log(calculate);
+     screenDisplay.textContent = calculate.join("");
+  })
+
+};
