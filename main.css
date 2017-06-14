@@ -22,15 +22,16 @@ light green: #8FBF7F*/
   height: 17vh;
 }
 .clear-button {
-  flex-basis: 25%;
-  border: 1px outset #ffffff;
+  flex-basis: 27%;
+  border: 1px solid #ffffff;
   text-align: center;
   color: #fff;
 }
 .screen {
-  flex-basis: 75%;
+  flex-basis: 73%;
   text-align: right;
   color: #ffffff;
+  margin-right: 5%;
 }
 .main-calc-row {
   display: flex;
@@ -49,4 +50,21 @@ light green: #8FBF7F*/
   border: 1px outset #fff;
   color: #3B5132;
   height: 17vh;
+}
+#equal {
+  background-color: #74B05C;
+  flex-basis: 25%;
+  text-align: center;
+  color: #fff;
+  border: 1px outset #fff;
+  height: 17vh;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .whole-calculator {
+  margin: 0%;
+}
+
+.clear-output {
+  height: 16vh;
 }
