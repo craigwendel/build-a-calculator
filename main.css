@@ -27,6 +27,9 @@ light green: #8FBF7F*/
   text-align: center;
   color: #fff;
 }
+.clear-button:hover {
+  background-color: #8FBF7F;
+}
 .screen {
   flex-basis: 73%;
   text-align: right;
@@ -51,6 +54,9 @@ light green: #8FBF7F*/
   color: #3B5132;
   height: 17vh;
 }
+.functions:hover {
+  color: #ffffff;
+}
 #equal {
   background-color: #74B05C;
   flex-basis: 25%;
@@ -58,6 +64,9 @@ light green: #8FBF7F*/
   color: #fff;
   border: 1px outset #fff;
   height: 17vh;
+}
+#equal:hover {
+  background-color: #8FBF7F;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
